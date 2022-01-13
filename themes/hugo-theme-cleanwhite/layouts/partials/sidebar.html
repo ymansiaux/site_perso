@@ -11,7 +11,7 @@
     {{ if .Site.Params.featured_tags }}
     <section>
         <hr class="hidden-sm hidden-xs">
-        <h5>FEATURED TAGS</h5>
+        <h5>Mots clés populaires</h5>
         <div class="tags">
             {{ $featured_condition_size := .Site.Params.featured_condition_size }}
             {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
@@ -28,11 +28,11 @@
     <!-- Short About -->
 	{{ if .Site.Params.about_me }}
     <section class="visible-md visible-lg">
-	<hr><h5><a href="{{ "/top/about" | relLangURL }}">ABOUT ME</a></h5>
+	<hr><h5><a href="{{ "/top/about" | relLangURL }}">A PROPOS</a></h5>
         <div class="short-about">
             {{ with .Site.Params.sidebar_avatar }}
             <a href="{{ "/top/about" | relLangURL }}">
-               <img src="{{ . | relURL }}" alt="avatar" style="cursor: pointer" />
+               <img src="{{ . | relURL }}" alt="avatar" style="cursor: pointer" width="130" height="130"/>
             </a>
             {{ end }}
             {{ with .Site.Params.sidebar_about_description }}

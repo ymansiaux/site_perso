@@ -1,0 +1,16 @@
+---
+title: Package R xtradata
+subtitle: Interrogation des WS BM
+author: Yohann Mansiaux
+description: "Récupération de données historisées via les webservices BM"
+date: '2022-01-01'
+slug: tools-xtradata
+image: "../img/tools/matrix.jpg"
+categories: ["Outils"]
+tags: ["package R", "code"]
+layout: "post"
+published: true
+---
+
+Notre package R pour télécharger les données est disponible sur le portail [open data de Bordeaux Métropole](https://opendata.bordeaux-metropole.fr/explore/dataset/met_package_r/information/) : 
+
