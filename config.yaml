@@ -1,27 +1,32 @@
-baseurl: https://zhaohuabing.com
-title: Huabing Blog
+baseurl: /
+relativeurls: true
+title: Datalab Bordeaux Métropole
 theme: hugo-theme-cleanwhite
-languageCode: en-us
+languageCode: fr
+DefaultContentLanguage: fr
 disqusShortname: ''
 googleAnalytics: ''
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "\\.knit\\.md$", "\\.utf8\\.md$", "_cache$"]
 preserveTaxonomyNames: yes
 paginate: 5
 hasCJKLanguage: yes
+permalinks:
+    post : /post/:year/:month/:day/:slug/
 outputs:
   home:
     - HTML
     - RSS
     - Algolia
 params:
-  SEOTitle: 赵化冰的博客 | Zhaohuabing Blog
+  SEOTitle: Datalab
   about_me: yes
   addtional_menus:
-    - href: /top/books/
-      title: BOOKS
-    - href: /top/archive/
-      title: ARCHIVE
+   # - href: /top/books/
+   #   title: BOOKS
+  #  - href: /top/archive/
+   #   title: ARCHIVE
     - href: /top/about/
-      title: ABOUT
+      title: A PROPOS
   algolia:
     params:
       - categories
@@ -36,7 +41,7 @@ params:
   algolia_apiKey: ''
   algolia_appId: ''
   algolia_indexName: ''
-  algolia_search: yes
+  algolia_search: no
   ba_track_id: ''
   bookmark_link:
     - href: https://martinfowler.com
@@ -51,13 +56,13 @@ params:
   description: 赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。
   disqus_proxy: ''
   disqus_site: ''
-  featured_condition_size: 1
+  featured_condition_size: 0
   featured_tags: yes
   friend_link:
     - href: https://zhaozhihan.com
       title: Linda的博客
-  friends: yes
-  header_image: img/home-bg-jeep.jpg
+  #friends: yes
+  header_image: img/background_imag.jpg
   image_404: img/404-bg.jpg
   keyword: 赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客,
     个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice
@@ -66,16 +71,16 @@ params:
   omit_categories: no
   page_view_conter: no
   reward: yes
-  sidebar_about_description: Software Developer, Open Source Enthusiast and Life Adventurer
-  sidebar_avatar: img/zhaohuabing.png
-  slogan: 路在脚下，心向远方
+  sidebar_about_description: Analyse de données, dataviz, open source
+  sidebar_avatar: img/LogoDataLab.svg
+  slogan: Analyse de données
   social:
-    email: youremail@gmail.com
-    github: https://github.com/yourgithub
-    linkedin: https://www.linkedin.com/in/yourlinkedinid
-    rss: yes
-    stackoverflow: https://stackoverflow.com/users/yourstackoverflowid
-    wechat: your wechat qr code image
+    #email: youremail@gmail.com
+    github: https://gitlab.com/bordeaux-metropole-public
+    #linkedin: https://www.linkedin.com/in/yourlinkedinid
+    #rss: yes
+    #stackoverflow: https://stackoverflow.com/users/yourstackoverflowid
+    #wechat: your wechat qr code image
   title_404: 你来到了没有知识的荒原 :(
   twikoo_env_id: ''
 outputFormats:

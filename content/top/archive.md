@@ -1,6 +1,6 @@
 ---
-description: Archive of historical posts.
+description: Posts triés par année.
 layout: archive
-title: Posts Archive
+title: Archive des publications
 type: post
 ---
